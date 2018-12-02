@@ -35,3 +35,28 @@ body{
   font-family: 'Roboto', sans-serif;
   line-height: 130%;
 }
+
+
+
+.line-separatortop{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: relative;
+  top: 23px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+
+.line-separatorbot{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: absolute;
+  left: 10%;
+  margin: 0 auto;
+  width: 80%;
+  bottom: 23px;
+}
