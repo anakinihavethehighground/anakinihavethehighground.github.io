@@ -21,10 +21,26 @@ body{
   margin-top: -25px;
 }
 
-.prog{
+.scrolldowntext{
   position: absolute;
-  left: -35%;
-  top: 70%;
+  width: 100px;
+  height: 50px;
+  top: 94%;
+  left: 47.7%;
+  margin-left: -50px; /* margin is -0.5 * dimension */
+  margin-top: -25px;
+}
+
+.undertext{
+  position: absolute;
+  top: 75%;
+  font-size: .75em;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto:300', sans-serif;
+  line-height: 130%;
+  white-space: nowrap;:
 }
 
 .maintext{
@@ -50,13 +66,24 @@ body{
 
 
 
-.line-separatorbot{
+.line-separatorbotl{
   height: 1px;
   background: #9e9898;
   border-bottom: 1px solid #313030;
   position: absolute;
   left: 10%;
   margin: 0 auto;
-  width: 80%;
+  width: 34%;
+  bottom: 24px;
+}
+
+.line-separatorbotr{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: absolute;
+  right: 10%;
+  margin: 0 auto;
+  width: 36.4%;
   bottom: 23px;
 }
