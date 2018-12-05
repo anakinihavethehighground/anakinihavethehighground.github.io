@@ -1,3 +1,4 @@
+/* main page format */
 body{
   padding: 0;
   font-family: sans-serif;
@@ -11,36 +12,39 @@ body{
   margin: 0;
 }
 
+/* first screen */
+
 .main{
   position: absolute;
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 25px;
   top: 50%;
-  left: 50%;
+  left: 51%;
   margin-left: -50px; /* margin is -0.5 * dimension */
   margin-top: -25px;
 }
 
 .scrolldowntext{
+   /* margin is -0.5 * dimension */
   position: absolute;
-  width: 100px;
-  height: 50px;
-  top: 94%;
-  left: 47.7%;
-  margin-left: -50px; /* margin is -0.5 * dimension */
-  margin-top: -25px;
+  width: 145px;
+  height: 15px;
+  margin-left: -50px;
+  margin-top: -16px;
+  bottom: 1%;
+  left: 49.5%;
 }
 
 .undertext{
   position: absolute;
-  top: 75%;
-  font-size: .75em;
+  bottom: 1%;
+  font-size: 0.75em;
   color: #fff;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-family: 'Roboto:300', sans-serif;
   line-height: 130%;
-  white-space: nowrap;:
+  white-space: nowrap;
 }
 
 .maintext{
@@ -64,26 +68,49 @@ body{
   width: 80%;
 }
 
+/* nav bar */
 
-
-.line-separatorbotl{
-  height: 1px;
-  background: #9e9898;
-  border-bottom: 1px solid #313030;
-  position: absolute;
-  left: 10%;
-  margin: 0 auto;
-  width: 34%;
-  bottom: 24px;
+#navbar {
+    background-color: #000;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
 }
 
-.line-separatorbotr{
-  height: 1px;
-  background: #9e9898;
-  border-bottom: 1px solid #313030;
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* second screen */
+  /* first section */
+
+.firstsection{
+  background-color: #000;
   position: absolute;
-  right: 10%;
-  margin: 0 auto;
-  width: 36.4%;
-  bottom: 23px;
+  top: 105%;
+  width: 100%;
+  height: 5%;
+}
+
+.secondsection{
+  background-image: url(media/bg_secondsection.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 105% 105%;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  height: 100%;
 }
