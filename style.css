@@ -20,24 +20,26 @@ body{
   height: 25px;
   top: 50%;
   left: 51%;
-  margin-left: -50px; /* margin is -0.5 * dimension */
+  margin-left: -50px;
   margin-top: -25px;
 }
 
 .scrolldowntext{
-   /* margin is -0.5 * dimension */
   position: absolute;
   width: 145px;
   height: 15px;
   margin-left: -50px;
   margin-top: -16px;
-  bottom: 1%;
+  bottom: 3%;
   left: 49.5%;
+  animation-name: scrollDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .undertext{
   position: absolute;
-  bottom: 1%;
+  bottom: 20%;
   font-size: 0.75em;
   color: #fff;
   letter-spacing: 5px;
@@ -47,6 +49,18 @@ body{
   white-space: nowrap;
 }
 
+.fa-angle-double-down{
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  position: absolute;
+  left: 45%;
+  top: 100%;
+  animation-name: arrowDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .maintext{
   font-size: 1.5em;
   color: #fff;
@@ -54,18 +68,6 @@ body{
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   line-height: 130%;
-}
-
-
-
-.line-separatortop{
-  height: 1px;
-  background: #9e9898;
-  border-bottom: 1px solid #313030;
-  position: relative;
-  top: 23px;
-  margin: 0 auto;
-  width: 80%;
 }
 
 /* nav bar */
@@ -89,12 +91,29 @@ body{
 }
 
 #navbar a:hover {
-    background-color: #ddd;
+    background-color: #66FCF1;
     color: black;
 }
 
+.navbar a.active{
+  background-color: #47BFB9;
+  color: white;
+}
+
+.nav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #45A29E;
+}
+
+.nav-right{
+  float: right;
+}
+
 /* second screen */
-  /* first section */
 
 .firstsection{
   background-color: #000;
@@ -114,3 +133,30 @@ body{
   width: 100%;
   height: 100%;
 }
+
+/* ALL KEYFRAMES */
+
+@keyframes scrollDown{
+  0%  {opacity: .9;}
+  50%  {opacity: .6;}
+  100%  {opacity: .9;}
+}
+
+@keyframes arrowDown{
+  0%  {top: 13px}
+  50%  {top: 17px}
+  100%  {top: 13px}
+}
+
+/* scrapped code
+
+.line-separatortop{
+  height: 1px;
+  background: #9e9898;
+  border-bottom: 1px solid #313030;
+  position: relative;
+  top: 23px;
+  margin: 0 auto;
+  width: 80%;
+}
+*/
