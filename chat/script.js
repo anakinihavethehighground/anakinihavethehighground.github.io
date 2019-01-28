@@ -110,7 +110,7 @@ function createMemberElement(member) {
 }
 
 function updateMembersDOM() {
-  DOM.membersCount.innerText = `${members.length} users present:`;
+  DOM.membersCount.innerText = `${members.length} | ʸᵒᵘ'r𝔢 𝔤𝔬n𝔫Ⱥ 𝔥aʌɘ ɐ  𝔟Ⱥ𝔡 ʇıɯǝ`;
   DOM.membersList.innerHTML = '';
   members.forEach(member =>
     DOM.membersList.appendChild(createMemberElement(member))
